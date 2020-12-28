@@ -5,15 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- FavIcon from preyesh-patel.com -->
     <link rel="icon" type="image/png" href="https://www.google.com/s2/favicons?domain=preyesh-patel.com">
-    <!-- Font awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <!-- CSS -->
     <link rel="stylesheet" href="./style.css">
-    <title>Template</title>
+    <title>Joke Teller</title>
 </head>
 <body>
-    <!-- Icon -->
-    <i class="fab fa-android"></i>
+    <!-- Header -->
+    
+    <!-- Container -->
+    <div class="container">
+        <h1 class="title">Programming Jokes with Text-to-Speech</h1>
+        <div class="voice-container">
+            <button id="button">Tell Me a Joke</button>
+            <div class="sliders">
+                <label for="rate">Rate (0.5 to 2) :</label>
+                <input type="range" min="0.5" max="2" value="1" step="0.1" id="rate">
+                <div id="rate-value">1</div>
+            </div>
+            <div class="sliders">
+                <label for="pitch">Pitch (0 to 2) :</label>
+                <input type="range" min="0" max="2" value="1" step="0.1" id="pitch">
+                <div id="pitch-value">1</div>
+            </div>
+        
+            <select id="voices-select">
+
+            </select>
+        </div>
+    </div>
+
     <!-- Script -->
     <script src="./script.js">
         
